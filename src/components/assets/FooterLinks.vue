@@ -1,17 +1,22 @@
 <template>
-  <nav>
-    <ul class="flex justify-center space-x-4 mt-2">
-      <li><a href="#home" class="hover:underline">Home</a></li>
-      <li><a href="#vision" class="hover:underline">Vision</a></li>
-      <li><a href="#rewars" class="hover:underline">Rewards</a></li>
-      <li><a href="#aboutus" class="hover:underline">About us</a></li>
-      <li><a href="#contact" class="hover:underline">Contact</a></li>
+  <nav class="bg-gray-900 p-6 rounded-lg shadow-lg">
+    <ul class="flex justify-center space-x-6">
+      <li>
+        <a href="#instagram" class="text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1">
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="#linkedin" class="text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1">
+          LinkedIn
+        </a>
+      </li>
     </ul>
   </nav>
 </template>
 
 <script lang="ts">
-    export default {
-    name: 'FooterLinks'
-    };
+export default {
+  name: 'FooterLinks'
+};
 </script>
