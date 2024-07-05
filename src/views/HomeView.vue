@@ -1,10 +1,6 @@
 <template>
-<<<<<<< HEAD
-  <Footer></Footer>
-=======
   <Navbar></Navbar>
-  <footer></footer>
->>>>>>> 8d5db1cc3b08be3d1486f385823ac3b6d370132b
+  <Footer></Footer>
 </template>
 
 <script lang="ts">
