@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "site-primary": "rgb(248, 249, 251)",
+        "site-primary": "rgb(208, 209, 211)",
         "site-secondary": "rgb(255, 227, 0)",
         "site-tertiary": "rgb(0, 182, 250)",
         "site-error": "#D73A49",
