@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-gray-800 text-white py-4">
+  <footer class="text-black py-4">
     <div class="container mx-auto text-center">
-      <FooterLinks class="mb-4 md:mb-0"/>
+      <FooterLinks />
       <FooterCopyright />
     </div>
   </footer>
