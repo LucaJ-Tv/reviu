@@ -1,6 +1,9 @@
 <template>
-  <Navbar></Navbar>
-  <Footer></Footer>
+  <div class="flex flex-col h-screen justify-between text-gray-200">
+    <Navbar></Navbar>
+    <div class="text-black">questa è una prova</div>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script lang="ts">
