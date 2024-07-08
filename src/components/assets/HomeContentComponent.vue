@@ -1,5 +1,5 @@
 <template>
-    <div class="py-8">
+    <div class="text-black justify-normal py-10 px-4">
         <h2 class="text-2xl font-bold mb-4">{{ title }}</h2>
         <p>{{ loremIpsum }}</p>
     </div>

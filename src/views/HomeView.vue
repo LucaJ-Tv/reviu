@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen justify-between text-gray-200 bg-site-primary">
+  <div class="flex flex-col h-screen bg-site-primary">
     <Navbar></Navbar>
     <Home></Home>
     <Footer></Footer>

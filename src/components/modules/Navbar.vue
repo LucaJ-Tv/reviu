@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-site-primary bg-opacity-35 backdrop-blur-md shadow-md border-gray-200">
+  <nav class="z-10 bg-site-primary bg-opacity-35 backdrop-blur-md shadow-md border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="@/assets/LogoReviu.svg" class="h-8" alt="Reviu logo"/>

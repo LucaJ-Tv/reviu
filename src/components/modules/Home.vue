@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-screen justify-between text-gray-900 overflow-y-auto" ref="homeContainer">
+    <div class="flex flex-col h-screen overflow-y-auto" ref="homeContainer">
         <HomeContentComponent title="Prova"></HomeContentComponent>
         <HomeContentComponent title="Prova2"></HomeContentComponent>
         <HomeContentComponent title="Prova3"></HomeContentComponent>
