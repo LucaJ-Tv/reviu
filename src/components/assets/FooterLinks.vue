@@ -1,14 +1,14 @@
 <template>
-  <nav class="bg-gray-900 p-6 rounded-lg shadow-lg">
-    <ul class="flex justify-center space-x-6">
+  <nav class="p-6 rounded-lg ">
+    <ul class="flex justify-center space-x-5">
       <li>
-        <a href="#instagram" class="text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1">
-          Instagram
+        <a href="#instagram">
+          <img src="../../assets/instagramLogoFooter.png" alt="Instagram" class="w-6 h-6">
         </a>
       </li>
       <li>
-        <a href="#linkedin" class="text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:-translate-y-1">
-          LinkedIn
+        <a href="#linkedin">
+          <img src="../../assets/linkedinLogoFooter.png" alt="LinkedIn" class="w-6 h-6">
         </a>
       </li>
     </ul>
