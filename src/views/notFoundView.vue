@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-screen justify-between text-gray-200 bg-site-primary">
+    <div class="notFound flex flex-col h-screen justify-between text-gray-200 bg-site-primary">
       <Navbar></Navbar>
       <div class="text-black">RITORNA ALLA PAGINA INIZIALE</div>
       <Footer></Footer>

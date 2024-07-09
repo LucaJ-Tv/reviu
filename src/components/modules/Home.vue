@@ -1,9 +1,8 @@
 <template>
     <div class="flex flex-col h-screen overflow-y-auto" ref="homeContainer">
-        <HomeContentComponent title="Prova"></HomeContentComponent>
-        <HomeContentComponent title="Prova2"></HomeContentComponent>
-        <HomeContentComponent title="Prova3"></HomeContentComponent>
-
+        <HomeContentComponent title="Vision"></HomeContentComponent>
+        <HomeContentComponent title="About us"></HomeContentComponent>
+        <HomeContentComponent title="Contacts"></HomeContentComponent>
         <Bee ref="beeRef"></Bee>
     </div>
 </template>

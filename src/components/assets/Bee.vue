@@ -25,7 +25,7 @@ export default defineComponent({
   
 <style scoped>
 .bee {
-    transition: transform 0.2s ease-out;
+    transition: transform 0.5s ease-out;
 }
 </style>
   
