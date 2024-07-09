@@ -9,8 +9,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import FooterLinks from '../assets/FooterLinks.vue'
-import FooterCopyright from '../assets/FooterCopyright.vue';
+import FooterLinks from '@/components/assets/FooterLinks.vue'
+import FooterCopyright from '@/components/assets/FooterCopyright.vue'
 
 export default defineComponent({
   name: 'Footer',
