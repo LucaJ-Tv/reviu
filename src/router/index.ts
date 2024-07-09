@@ -13,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/about',
-    name: 'about',
+    name: 'aboutus',
     component: AboutView
   },
   {
