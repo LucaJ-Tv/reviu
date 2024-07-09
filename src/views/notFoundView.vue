@@ -1,6 +1,6 @@
 <template>
     <div class="notFound flex flex-col h-screen justify-between text-gray-200 bg-site-primary">
-      <Navbar></Navbar>
+      <Navbar :pageSelected="'0'"></Navbar>
       <div class="text-black">RITORNA ALLA PAGINA INIZIALE</div>
       <Footer></Footer>
     </div>
@@ -12,7 +12,7 @@
   import Navbar from '@/components/modules/Navbar.vue';
   
   export default defineComponent({
-    name: 'HomeView',
+    name: 'notFoundView',
     components: {
       Footer,
       Navbar
