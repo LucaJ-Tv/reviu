@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col h-screen bg-site-primary">
-    <Navbar></Navbar>
+    <Navbar :pageSelected="'Home'"></Navbar>
     <Home></Home>
     <Footer></Footer>
   </div>

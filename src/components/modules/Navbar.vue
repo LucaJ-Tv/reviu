@@ -14,17 +14,16 @@
       <transition name="slide-fade">
         <div v-if="menuOpen || isLargeScreen" class="w-full md:block md:w-auto" id="navbar-default">
           <ul class="font-medium shadow-lg md:shadow-none flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
-            <li>
-              <a href="#" class="block py-2 px-3 text-white bg-opacity-80 bg-site-tertiary hover:bg-opacity-100 rounded-lg md:bg-transparent md:text-site-tertiary md:p-0" aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded-lg hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-500 md:p-0">Vision</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded-lg hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-500 md:p-0">About us</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded-lg hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-500 md:p-0">Contacts</a>
+            <li v-for="page in pages" :key="page">
+              <a 
+                @click = "nextpage(page)"
+                :class="[
+                  'block py-2 px-3 rounded-lg md:bg-transparent md:p-0',
+                  page === pageSelected ? 'text-white bg-opacity-80 bg-site-tertiary hover:bg-opacity-100' : 'text-gray-900 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-500'
+                ]" 
+                aria-current="page">
+                {{ page }}
+              </a>
             </li>
           </ul>
         </div>
@@ -35,10 +34,17 @@
 
 <script lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
+import { useRouter} from 'vue-router';
 
 export default {
-
-  props: ['pageSelected'],
+  name: 'Navbar',
+  
+  props: {
+    pageSelected: {
+      type: String,
+      required: true
+    }
+  },
 
   data () {
       return {
@@ -49,9 +55,15 @@ export default {
   setup() {
     const menuOpen = ref(false);
     const isLargeScreen = ref(false);
+    const router = useRouter();
 
     const toggleMenu = () => {
       menuOpen.value = !menuOpen.value;
+    };
+
+    const nextpage = (page: String) => {
+      const pageName = page.split(' ').join('').toLowerCase();
+      router.push({ name: pageName });
     };
 
     const checkScreenSize = () => {
@@ -71,6 +83,7 @@ export default {
       menuOpen,
       isLargeScreen,
       toggleMenu,
+      nextpage
     };
   },
 };

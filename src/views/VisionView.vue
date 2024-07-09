@@ -1,6 +1,21 @@
 <template>
-    <div class="Vision">
-      <h1>This is an vision page</h1>
-    </div>
+  <div class="flex flex-col h-screen justify-between bg-site-primary">
+    <Navbar :pageSelected="'Vision'"></Navbar>
+    <div>this page is for vision</div>
+    <Footer></Footer>
+  </div>
 </template>
-  
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Footer from '@/components/modules/Footer.vue';
+import Navbar from '@/components/modules/Navbar.vue';
+
+export default defineComponent({
+  name: 'VisionView',
+  components: {
+    Footer,
+    Navbar,
+  },
+});
+</script>
