@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-screen justify-between bg-site-primary bg-opacity-35 backdrop-blur-md shadow-md border-gray-200">
+    <div class="flex flex-col h-min-screen justify-between bg-site-primary bg-opacity-35 border-gray-200">
         <div class="flex flex-col items-center justify-center flex-1">
             <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">Contacts</h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

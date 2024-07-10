@@ -1,5 +1,5 @@
 <template>
-    <div class="w-8 h-full bg-gray-200 rounded-full overflow-hidden">
+    <div class="w-7 h-full bg-gray-200 rounded-full overflow-hidden">
       <div class="bg-site-tertiary w-full h-full" :style="{ height: progress + '%' }"></div>
     </div>
   </template>

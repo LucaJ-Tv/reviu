@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-screen justify-between bg-site-primary bg-opacity-35 backdrop-blur-md shadow-md border-gray-200 p-6">
+    <div class="flex flex-col h-min-screen justify-between bg-site-primary bg-opacity-35 border-gray-200 p-6">
       <div class="flex flex-col items-center justify-center flex-1">
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">Vision</h1>
         <div class="flex items-start space-x-8">

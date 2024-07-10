@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen justify-between bg-site-primary">
+  <div class="flex flex-col justify-between bg-site-primary">
     <Navbar :pageSelected="'About us'"></Navbar>
     <About></About>
     <Footer></Footer>
