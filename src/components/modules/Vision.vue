@@ -6,11 +6,7 @@
           <ProgressBar :progress="progress" />
           <div class="mt-4 text-gray-700">
             <div class="space-y-4">
-              <label v-for="(goal, index) in goals" :key="index" class="flex items-center pb-4">
-                <input  type="checkbox" class="form-checkbox h-8 w-8"
-                       :checked="goal.completed" :disabled="true">
-                <span class="ml-4">{{ goal.text }}</span>
-              </label>
+              <Goal v-for="(goal, index) in goals" :key="index" :goal="goal" />
             </div>
           </div>
         </div>
@@ -21,11 +17,13 @@
   <script lang="ts">
   import { defineComponent, computed, ref } from 'vue';
   import ProgressBar from '@/components/assets/ProgressBar.vue';
+  import Goal from '@/components/assets/Goal.vue';
   
   export default defineComponent({
     name: 'Vision',
     components: {
       ProgressBar,
+      Goal,
     },
     setup() {
       const goals = ref([
@@ -46,4 +44,3 @@
     },
   });
   </script>
-  
