@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen justify-between bg-site-primary">
     <Navbar :pageSelected="'Vision'"></Navbar>
-    <div>this page is for vision</div>
+    <Vision></Vision>
     <Footer></Footer>
   </div>
 </template>
@@ -10,11 +10,13 @@
 import { defineComponent } from 'vue';
 import Footer from '@/components/modules/Footer.vue';
 import Navbar from '@/components/modules/Navbar.vue';
+import Vision from '@/components/modules/Vision.vue';
 
 export default defineComponent({
   name: 'VisionView',
   components: {
     Footer,
+    Vision,
     Navbar,
   },
 });

@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import VisionView from '../views/VisionView.vue'
-import AboutView from '../views/AboutView.vue'
+import HomeView from '@/views/HomeView.vue'
+import VisionView from '@/views/VisionView.vue'
+import AboutView from '@/views/AboutView.vue'
 import ContactsView from '@/views/ContactsView.vue'
 import NotFoundView from '@/views/notFoundView.vue'
 
@@ -17,12 +17,12 @@ const routes: Array<RouteRecordRaw> = [
     component: AboutView
   },
   {
-    path: '/Contacts',
+    path: '/contacts',
     name: 'contacts',
     component: ContactsView
   },
   {
-    path: '/Vision',
+    path: '/vision',
     name: 'vision',
     component: VisionView
   },
