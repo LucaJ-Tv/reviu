@@ -9,8 +9,8 @@
   
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
-import HomeContentComponent from '../assets/HomeContentComponent.vue';
-import Bee from '../assets/Bee.vue';
+import HomeContentComponent from '@/components/assets/HomeContentComponent.vue';
+import Bee from '@/components/assets/Bee.vue';
 
 export default defineComponent({
     name: 'Home',
