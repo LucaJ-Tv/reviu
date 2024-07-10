@@ -14,15 +14,11 @@
   
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Footer from '@/components/modules/Footer.vue';
-import Navbar from '@/components/modules/Navbar.vue';
 import Contact from '@/components/assets/Contact.vue';
 
 export default defineComponent({
     name: 'Contacts',
     components: {
-        Footer,
-        Navbar,
         Contact,
     },
 });
