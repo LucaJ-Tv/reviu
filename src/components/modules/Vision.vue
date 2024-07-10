@@ -4,8 +4,8 @@
       <div class="flex flex-col items-center justify-center flex-1">
         <div class="flex items-start space-x-8">
           <ProgressBar :progress="progress" />
-          <div class="mt-4 text-gray-700">
-            <div class="space-y-4">
+          <div class="text-gray-700">
+            <div class="space-y-4 p-4">
               <Goal v-for="(goal, index) in goals" :key="index" :goal="goal" />
             </div>
           </div>
