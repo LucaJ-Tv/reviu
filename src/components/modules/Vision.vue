@@ -4,8 +4,8 @@
         <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">Vision</h1>
         <div class="flex items-start space-x-8">
           <ProgressBar :progress="progress" />
-          <div class="mt-4 text-gray-700">
-            <div class="space-y-4">
+          <div class="text-gray-700">
+            <div class="space-y-4 p-4">
               <Goal v-for="(goal, index) in goals" :key="index" :goal="goal" />
             </div>
           </div>
