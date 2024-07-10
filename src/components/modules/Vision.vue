@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col h-min-screen justify-between bg-site-primary bg-opacity-35 border-gray-200 p-6">
+      <h1 class="text-center py-3 shadow-md bg-black bg-opacity-5 backdrop-blur-sm mb-6 font-semibold text-2xl w-full">Vision</h1>
       <div class="flex flex-col items-center justify-center flex-1">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">Vision</h1>
         <div class="flex items-start space-x-8">
           <ProgressBar :progress="progress" />
           <div class="mt-4 text-gray-700">

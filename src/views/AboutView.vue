@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col justify-between bg-site-primary">
+  <div class="flex flex-col min-h-screen bg-site-primary">
     <Navbar :pageSelected="'About us'"></Navbar>
-    <About></About>
+    <div class="flex-grow">
+      <About></About>
+    </div>
     <Footer></Footer>
   </div>
 </template>

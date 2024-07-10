@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col h-min-screen justify-between bg-site-primary bg-opacity-35 border-gray-200">
         <div class="flex flex-col items-center justify-center flex-1">
-            <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">Contacts</h1>
+            <h1 class="text-center py-3 shadow-md bg-black bg-opacity-5 backdrop-blur-sm mb-6 font-semibold text-2xl w-full">Contacts</h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <Contact email="contact1@example.com"></Contact>
                 <Contact email="contact2@example.com"></Contact>
