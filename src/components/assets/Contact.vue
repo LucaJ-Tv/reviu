@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 bg-white rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+  <div class="p-4 shadow-md rounded-lg bg-black bg-opacity-5 backdrop-blur-sm transition-transform transform hover:scale-105 hover:shadow-lg">
     <a :href="'mailto:' + email" class="text-gray-700 text-lg font-semibold mb-2 p-2 block hover:underline">
       {{ email }}
     </a>
